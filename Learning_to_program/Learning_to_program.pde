@@ -1,3 +1,4 @@
+// window:ish screen saver, with a hint of stranger things
 int N_LINES = 30;
 
 parabolicCurve pc;
@@ -11,15 +12,13 @@ void setup() {
   pc = new parabolicCurve(axis1, axis2, 10);
 }
 
-int nFrame = 0;
+//int nFrame = 0; // uncomment for saving gif anim
 void draw() {
   background(0);
-  stroke(12, 100, 1);
-  strokeWeight(10);
   pc.draw();
   axis1.transform();
   axis2.transform();
-  saveFrame("qbvet" + str(nFrame++) + ".gif");  
+  //saveFrame("qbvet" + str(nFrame++) + ".gif");  
   int paus = millis() + 10; 
   while (paus > millis()) {
   }
@@ -40,8 +39,7 @@ class parabolicCurve {
       int y1 = mAxis1.getY1() + (mAxis1.getY2() - mAxis1.getY1()) *  n / (mNLines-1);
       int x2 = mAxis2.getX1() + (mAxis2.getX2() - mAxis2.getX1()) *  n / (mNLines-1);
       int y2 = mAxis2.getY1() + (mAxis2.getY2() - mAxis2.getY1()) *  n / (mNLines-1);
-      int r, g, b;
-     
+   
       strokeWeight(10);
       stroke(255, 0, 0);
       line(x1, y1, x2, y2);
@@ -55,7 +53,6 @@ class parabolicCurve {
 class axis {
   int mX1, mY1, mX2, mY2;
   int mXV1, mYV1, mXV2, mYV2;
-  axis() {}
   axis(int x1, int y1, int x2, int y2) {
     set(x1, y1, x2, y2);
   }
@@ -64,8 +61,7 @@ class axis {
   int getX2() {return mX2;}
   int getY2() {return mY2;}
  
-  void setV(int xv1, int yv1, int xv2, int yv2)
-  {
+  void setV(int xv1, int yv1, int xv2, int yv2) {
     mXV1 = xv1;
     mYV1 = yv1;
     mXV2 = xv2;
