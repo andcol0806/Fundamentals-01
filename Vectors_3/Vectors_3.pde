@@ -48,14 +48,14 @@ void drawBall() {
 	if (ballVector.x > (640 - ellipseX / 2)) {
 		ellipseX = (640 - (int)ballVector.x) * 2;
 		ellipseY = ((int)ballVector.x - (640 - (RADIUS / 2))) * 2 + RADIUS;
-	} elseif (ballVector.x < ellipseX / 2) {
+	} else if (ballVector.x < ellipseX / 2) {
 		ellipseX = (int)ballVector.x * 2;
 		ellipseY = ((RADIUS / 2) - (int)ballVector.x) * 2 + RADIUS;
 	}
 	if (ballVector.y > (640 - ellipseY / 2)) {
 		ellipseY = (640 - (int)ballVector.y) * 2;
 		ellipseX = ((int)ballVector.y - (640 - (RADIUS / 2))) * 2 + RADIUS;
-	} elseif (ballVector.y < ellipseX / 2) {
+	} else if (ballVector.y < ellipseX / 2) {
 		ellipseY = (int)ballVector.y * 2;
 		ellipseX = ((RADIUS / 2) - (int)ballVector.y) * 2 + RADIUS;
 	}
