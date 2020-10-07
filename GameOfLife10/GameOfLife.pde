@@ -32,7 +32,7 @@ class GameOfLife {
 		checkNeighbours();
 		updateNew();
 		for (int n = 0; n < (w * h); n++) {
-			fill(255 * gamefield[(n % w) + (n / w) * w], 0, 0);
+			fill(255 * gamefield[n], 0, 0);
 			rect(n % w * cellW, n / w * cellH, cellW, cellH);
 		}
 	}
