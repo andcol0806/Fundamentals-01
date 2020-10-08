@@ -1,1 +1,1 @@
-![Screenshot](learning to program.gif)
+![Screenshot](screensaver.gif)
