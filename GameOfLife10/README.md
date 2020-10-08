@@ -1,4 +1,4 @@
-You need the Minim Sound Library in Processing to run this:
+You need the Minim Sound Library in Processing to run this.<br>
 Open Processing: Tools / Add tool / Libraries / Minim
 
 ### Click image for YouTube video
