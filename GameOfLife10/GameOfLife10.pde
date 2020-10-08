@@ -19,7 +19,6 @@ void settings() {
 void setup() {
 	((java.awt.Canvas) surface.getNative()).requestFocus();
 	game = new GameOfLife(w, h, 10, 10);
-	fps = new FrameCounter();
 	minim = new Minim(this);
 	transAm = minim.loadFile("TransAm.mp3", 4096);
 	transAm.play();
