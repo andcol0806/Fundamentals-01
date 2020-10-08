@@ -1,1 +1,1 @@
-![Screenshot](ball.gif)
+![Screenshot](balls.gif)
