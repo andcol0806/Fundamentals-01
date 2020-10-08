@@ -10,7 +10,6 @@ FFT  fft;
 Minim minim;
 AudioPlayer transAm;
 GameOfLife game;
-FrameCounter fps;
 
 void settings() {
 	size (w, h);
